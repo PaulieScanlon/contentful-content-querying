@@ -1,3 +1,13 @@
+# Content Querying with Gatsby + Contentful
+
+👀 See the preview: [https://](https://)
+
+📝 Read the post on the Gatsby Blog: [Content Querying with Gatsby + Contentful](https://)
+
+⚙️ This repo is based on [Gatsby's minimal demo](https://github.com/gatsby-inc/gatsby-demo-minimal)
+
+<hr />
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />

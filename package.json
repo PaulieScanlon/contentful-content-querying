@@ -1,7 +1,7 @@
 {
   "name": "gatsby-demo-minimal",
   "version": "1.0.0",
-  "description": "Gatsby's minimal demo",
+  "description": "Content Querying with Gatsby + Contentful",
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsby-inc/gatsby-demo-minimal.git"
+    "url": "git+https://github.com/PaulieScanlon/contentful-content-querying.git"
   },
   "keywords": [
     "gatsby",
@@ -21,9 +21,9 @@
   "author": "Paul Scanlon <paul.scanlon@gatsbyjs.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gatsby-inc/gatsby-demo-minimal/issues"
+    "url": "https://github.com/PaulieScanlon/contentful-content-querying/issues"
   },
-  "homepage": "https://github.com/gatsby-inc/gatsby-demo-minimal#readme",
+  "homepage": "https://github.com/PaulieScanlon/contentful-content-querying#readme",
   "dependencies": {
     "gatsby": "^4.1.1",
     "react": "^17.0.2",
