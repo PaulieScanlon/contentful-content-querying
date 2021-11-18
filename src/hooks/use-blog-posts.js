@@ -4,7 +4,7 @@ const useBlogPosts = () => {
   const {
     allContentfulPost: { nodes }
   } = useStaticQuery(graphql`
-    query BlogPostQuery {
+    query blogLinksQuery {
       allContentfulPost {
         nodes {
           title
