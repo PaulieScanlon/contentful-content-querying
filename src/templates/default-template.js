@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const DefaultView = (contentfulPage) => {
+const DefaultTemplate = (contentfulPage) => {
   return (
     <Fragment>
       <h1>{contentfulPage.title}</h1>
@@ -19,4 +19,4 @@ const DefaultView = (contentfulPage) => {
   );
 };
 
-export default DefaultView;
+export default DefaultTemplate;

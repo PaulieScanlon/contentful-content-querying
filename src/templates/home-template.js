@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import useBlogPosts from '../hooks/use-blog-posts';
 
-const HomeView = (contentfulPage) => {
+const HomeTemplate = (contentfulPage) => {
   const blogPosts = useBlogPosts();
 
   return (
@@ -35,4 +35,4 @@ const HomeView = (contentfulPage) => {
   );
 };
 
-export default HomeView;
+export default HomeTemplate;

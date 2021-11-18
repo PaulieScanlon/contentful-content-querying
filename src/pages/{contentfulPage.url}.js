@@ -1,32 +1,32 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import HomeView from '../components/home-view';
-import BlogView from '../components/blog-view';
-import DefaultView from '../components/default-view';
+import HomeTemplate from '../templates/home-template';
+import BlogTemplate from '../templates/blog-template';
+import DefaultTemplate from '../templates/default-template';
 
-const getPage = (contentfulPage) => {
-  const { type } = contentfulPage;
+const getTemplate = (contentfulPage) => {
+  const { template } = contentfulPage;
 
-  switch (type) {
+  switch (template) {
     case 'home':
-      return <HomeView {...contentfulPage} />;
+      return <HomeTemplate {...contentfulPage} />;
     case 'blog':
-      return <BlogView {...contentfulPage} />;
+      return <BlogTemplate {...contentfulPage} />;
 
     default:
-      return <DefaultView {...contentfulPage} />;
+      return <DefaultTemplate {...contentfulPage} />;
   }
 };
 
 const Page = ({ data: { contentfulPage } }) => {
-  return <main>{getPage(contentfulPage)}</main>;
+  return <main>{getTemplate(contentfulPage)}</main>;
 };
 
 export const data = graphql`
   query pageQuery($id: String) {
     contentfulPage(id: { eq: $id }) {
-      type
+      template
       title
       description {
         description
