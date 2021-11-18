@@ -1,14 +1,15 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const useBlogPosts = () => {
+const useAllBlogPosts = () => {
   const {
     allContentfulPost: { nodes }
   } = useStaticQuery(graphql`
-    query blogLinksQuery {
-      allContentfulPost {
+    query allBlogLinksQuery {
+      allContentfulPost(sort: { fields: createdAt, order: DESC }) {
         nodes {
           title
           gatsbyPath(filePath: "/blog/{contentfulPost.url}")
+          createdAt
         }
       }
     }
@@ -16,4 +17,4 @@ const useBlogPosts = () => {
   return nodes;
 };
 
-export default useBlogPosts;
+export default useAllBlogPosts;

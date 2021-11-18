@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
 
-import useBlogPosts from '../hooks/use-blog-posts';
+import useAllBlogPosts from '../hooks/use-all-blog-posts';
 
 const BlogTemplate = (contentfulPage) => {
-  const blogPosts = useBlogPosts();
+  const allBlogPosts = useAllBlogPosts();
 
   return (
     <Fragment>
@@ -21,7 +21,7 @@ const BlogTemplate = (contentfulPage) => {
         />
       ) : null}
       <ul>
-        {blogPosts.map((node, index) => {
+        {allBlogPosts.map((node, index) => {
           const { title, gatsbyPath } = node;
           return (
             <li key={index}>
