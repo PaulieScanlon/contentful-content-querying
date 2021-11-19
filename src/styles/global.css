@@ -1,0 +1,17 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+
+nav > ul {
+  padding: 8px;
+}
+
+nav > ul > li {
+  padding-right: 8px;
+  display: inline;
+}
+
+main {
+  min-height: 480px;
+}

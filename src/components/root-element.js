@@ -12,21 +12,11 @@ const RootElement = ({ children }) => {
     <Fragment>
       <header>
         <nav>
-          <ul
-            style={{
-              padding: '0px'
-            }}
-          >
+          <ul>
             {topNavigation.map((item, index) => {
               const { url, title } = item;
               return (
-                <li
-                  key={index}
-                  style={{
-                    display: 'inline',
-                    paddingRight: '8px'
-                  }}
-                >
+                <li key={index}>
                   <Link to={url}>{title}</Link>
                 </li>
               );
@@ -34,30 +24,14 @@ const RootElement = ({ children }) => {
           </ul>
         </nav>
       </header>
-      <main
-        style={{
-          minHeight: '480px'
-        }}
-      >
-        {children}
-      </main>
+      <main>{children}</main>
       <footer>
         <nav>
-          <ul
-            style={{
-              padding: '0px'
-            }}
-          >
+          <ul>
             {bottomNavigation.map((item, index) => {
               const { url, title } = item;
               return (
-                <li
-                  key={index}
-                  style={{
-                    display: 'inline',
-                    paddingRight: '8px'
-                  }}
-                >
+                <li key={index}>
                   <Link to={url}>{title}</Link>
                 </li>
               );

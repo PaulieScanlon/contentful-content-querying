@@ -11,14 +11,7 @@ const HomeTemplate = (contentfulPage) => {
       <h1>{contentfulPage.title}</h1>
       <p>{contentfulPage.description.description}</p>
       {contentfulPage.image ? (
-        <img
-          src={contentfulPage.image.file.url}
-          alt={contentfulPage.title}
-          style={{
-            width: 300,
-            height: 'auto'
-          }}
-        />
+        <img src={contentfulPage.image.file.url} alt={contentfulPage.title} />
       ) : null}
       <h2>Latest Posts</h2>
       <ul>
