@@ -1,8 +1,8 @@
 # Content Querying with Gatsby + Contentful
 
-👀 See the preview: [https://](https://)
+👀 See the preview: [https://contentfulcontentquerying.gatsbyjs.io/](https://contentfulcontentquerying.gatsbyjs.io/)
 
-📝 Read the post on the Gatsby Blog: [Content Querying with Gatsby + Contentful](https://)
+📝 Read the post on the Gatsby Blog: [Content Querying with Gatsby + Contentful](https://www.gatsbyjs.com/blog/content-querying-with-gatsby-contentful)
 
 ⚙️ This repo is based on [Gatsby's minimal demo](https://github.com/gatsby-inc/gatsby-demo-minimal)
 
